@@ -3,9 +3,9 @@
 }
 .components-container {
   display: flex;
-  max-height: 476px;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .components-heading {
@@ -45,11 +45,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 19px;
   flex-wrap: wrap;
 }
 
 .components-item {
-  width: 270px;
+  max-width: calc((100% - 57px) / 4);
   padding: 28px 36px 28px 28px;
   border-radius: 15px;
   background: #fff;
@@ -114,7 +115,7 @@
   display: flex;
   gap: 14px;
   flex-direction: column;
-  width: 230px;
+  width: 232px;
   height: 230px;
   align-items: center;
 }
