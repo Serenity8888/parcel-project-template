@@ -1,8 +1,8 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -12,30 +12,30 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 img {
-    display: block;
-    width: 100%;
-    min-height: auto;
-    max-width: 100%;
-    object-fit: cover;
+  display: block;
+  //   width: 100%;
+  min-height: auto;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .container {
-    max-width: 1136px;
-    margin: 0 auto;
+  max-width: 1136px;
+  margin: 0 auto;
 }

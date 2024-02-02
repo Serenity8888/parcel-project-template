@@ -6,7 +6,6 @@
   max-height: 476px;
   flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .components-heading {
@@ -46,13 +45,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 19px;
   flex-wrap: wrap;
 }
 
 .components-item {
-  width: calc((100% - 57px) / 4);
-  display: block;
+  width: 270px;
   padding: 28px 36px 28px 28px;
   border-radius: 15px;
   background: #fff;
