@@ -101,6 +101,7 @@
   border-radius: 100px;
   border: 1px solid #fd9222;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .reviews-btn:hover {
@@ -129,6 +130,7 @@
   gap: 32px;
   justify-content: center;
   align-items: center;
+  z-index: 0;
 }
 
 .pagination {
@@ -139,7 +141,7 @@
   margin: 0 auto;
 }
 
-.swiper-pagination-horizontal.swiper-pagination-bullets
+.pagination.swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
@@ -155,4 +157,208 @@
   height: 13px;
   background-color: #fd9222;
   border-radius: 20px;
+}
+
+// ===== MODAL =====
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 517px;
+  min-height: 628px;
+  background: #fafafa;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+}
+
+.reviews-modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.reviews-modal-close:hover {
+  fill: #fd9222;
+}
+
+.reviews-modal-heading {
+  color: #111;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  width: 298px;
+  margin-bottom: 40px;
+}
+
+.reviews-modal-heading span {
+  color: #fd9222;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+
+.reviews-modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.reviews-form-group {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  padding: 22px 24px;
+  border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  height: 69px;
+}
+
+.reviews-form-group:hover,
+.reviews-form-group:focus {
+  box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+}
+
+.reviews-modal-input {
+  width: 392px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 21.78px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border: none;
+  background: #fafafa;
+}
+
+.reviews-modal-input::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+.reviews-modal-input:hover,
+.reviews-modal-input:focus {
+  outline-style: none;
+}
+.reviews-tel-group {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  width: 125px;
+  padding-right: 20px;
+  margin-right: 28px;
+  border-right: 3px solid rgba(17, 17, 17, 0.05);
+}
+
+.country-code {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+.reviews-modal-textarea {
+  display: flex;
+  align-items: center;
+  gap: 21.78px;
+  flex: 1 0 0;
+  align-self: stretch;
+  padding: 22px 24px 93px 24px;
+  max-width: 513px;
+  resize: none;
+  background: #fafafa;
+  border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+}
+
+.reviews-modal-textarea::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+.reviews-modal-textarea:focus,
+.reviews-modal-textarea:hover {
+  box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+  outline-style: none;
+}
+
+.reviews-modal-btn {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: inline-flex;
+  padding: 14px 40px;
+  align-self: flex-start;
+  gap: 14px;
+  border-radius: 100px;
+  background: #fd9222;
+  border: none;
+  cursor: pointer;
+}
+
+.reviews-modal-btn:hover,
+.reviews-modal-btn:focus {
+  color: #fd9222;
+  background: #fcf1e0;
 }

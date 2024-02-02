@@ -135,13 +135,72 @@
           </div>
         </li>
       </ul>
-      <div class="pagination">
+      <div class="pagination"></div>
+      <button type="button" class="reviews-btn" data-modal-open>
+        Leave a review
+      </button>
+    </div>
+
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <svg
+          class="reviews-modal-close"
+          width="16"
+          height="16"
+          data-modal-close
+        >
+          <use href="/src/images/icons.svg#close"></use>
+        </svg>
+        <h2 class="reviews-modal-heading">
+          LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span>
+        </h2>
+        <form class="reviews-modal-form">
+          <div class="reviews-form-group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="reviews-modal-input"
+              placeholder="Name"
+            />
+          </div>
+          <div class="reviews-form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="reviews-modal-input"
+              placeholder="Email"
+            />
+          </div>
+          <div class="reviews-form-group reviews-tel-group">
+            <input
+              type="tel"
+              id="phone-number"
+              name="phone-number"
+              class="reviews-modal-input"
+              placeholder="Phone number"
+            />
+            <div class="flag-number">
+              <svg width="32" height="24">
+                <use href="/src/images/icons.svg#flag"></use>
+              </svg>
+              <span class="country-code"> +380 </span>
+            </div>
+          </div>
+          <textarea
+            id="comment"
+            name="comment"
+            placeholder="Enter Text"
+            class="reviews-modal-textarea"
+          ></textarea>
+          <button type="submit" class="reviews-modal-btn">Send</button>
+        </form>
       </div>
-    <button type="button" class="reviews-btn">Leave a review</button>
+    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
   <script>
     var swiper = new Swiper('.mySwiper', {
       slidesPerView: 3,
@@ -152,4 +211,5 @@
       },
     });
   </script>
+  <script type="module" src="/src/modal.js"></script>
 </section>
