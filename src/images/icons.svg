@@ -10,6 +10,13 @@
             <path d="M14.1979 15.671L4.88863 9.85388M7.45579 5.64288L16.765 11.46M6.9761 16.9734L14.6776 4.34042M17.8347 9.70537C15.8399 8.45885 15.0564 7.48468 16.3399 5.37918L10.0229 1.43188L2.32147 14.0649L11.6307 19.882L17.8347 9.70537Z" stroke="#FD9222" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
         </symbol>
 
+        <symbol id="pagination-btn" width="13" height="13" viewBox="0 0 13 13">
+            <path d="M6.5 13C10.0899 13 13 10.0899 13 6.5C13 2.91015 10.0899 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 10.0899 2.91015 13 6.5 13Z" fill-opacity="0.1"/>
+        </symbol>
+
+        <symbol id="pagination-btn-active" width="28" height="13" viewBox="0 0 28 13">
+            <path d="M21.5 0H6.5C2.91015 0 0 2.91015 0 6.5C0 10.0899 2.91015 13 6.5 13H21.5C25.0899 13 28 10.0899 28 6.5C28 2.91015 25.0899 0 21.5 0Z"/>
+        </symbol>
 
         <symbol id="instagram" width="24" height="24" viewBox="0 0 24 24">
             <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -69,6 +76,7 @@
             <path d="M21 7L7 21" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M7 7L21 21" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </symbol>
+
     <!-- Home Icons -->
         <symbol id="icon-logo" width="24" height="24" viewBox="0 0 24 24">
             <path d="M2.95799 15.0568L11.0406 1.9886L11.5206 1.48303L17.6974 5.6014L17.7397 8.08665L19.2472 10.5463L12.5874 21.1038L2.95799 15.0568Z"/>
