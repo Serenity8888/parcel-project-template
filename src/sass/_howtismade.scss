@@ -1,0 +1,46 @@
+.how-its-made-container {
+  display: flex;
+}
+
+.how-its-made-heading {
+  width: 411px;
+  color: #111;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  align-self: center;
+}
+
+.how-its-made-heading span {
+  color: #fd9222;
+}
+
+.how-its-made-instruction {
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.72px;
+  color: #1e1823;
+}
+
+.how-its-made-image {
+  border-radius: 15px;
+  width: 600px;
+  height: 400px;
+}
+
+.how-its-made-list {
+  padding: 100px;
+  margin: 0;
+}
+
+.how-its-made-item {
+  padding: 6px;
+  margin-right: 0px;
+}
