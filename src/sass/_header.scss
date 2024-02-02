@@ -138,7 +138,7 @@ button {
 
 .hero-background {
   background: linear-gradient(180deg, var(--black-gradient1) 0%, var(--black-gradient2) 100%),
-    url('../images/hero-bg.jpg'),
+    url('/src/images/hero-bg.jpg'),
     lightgrey -70.319px -105.03px / 110.32% 139.265% no-repeat;
   background-repeat: no-repeat;
   background-position: center;
@@ -353,7 +353,7 @@ button {
 
   .hero-background {
     background: linear-gradient(180deg, var(--black-gradient1) 0%, var(--black-gradient2) 100%),
-      url('../images/hero-bg-tablet.jpg'),
+      url('/src/images/hero-bg.jpg'),
       lightgrey -427.239px -24.924px / 195.428% 103.07% no-repeat;
     background-repeat: no-repeat;
     background-position: center;
@@ -441,7 +441,7 @@ button {
 
   .hero-background {
     background: linear-gradient(180deg, var(--black-gradient1) 0%, var(--black-gradient2) 100%),
-      url('../images/hero-bg-mobile.jpg'),
+      url('/src/images/hero-bg.jpg'),
       lightgrey -427.239px -24.924px / 195.428% 103.07% no-repeat;
     background-repeat: no-repeat;
     background-position: center;
